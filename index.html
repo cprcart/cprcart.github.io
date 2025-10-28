@@ -1,12 +1,6 @@
 <!--
-  GitHub Pages site for cprcart.github.io
-  Structure:
-    - index.html → Homepage (overview of CPR certification & equipment)
-    - posts.html → Blog/posts page (for future updates, guides, or tips)
-  To deploy:
-    1. Create public repo named `cprcart.github.io`
-    2. Add this file as index.html and create posts.html
-    3. Commit + push — site will appear at https://cprcart.github.io
+  index.html — Homepage for CPR Cart GitHub Pages site
+  Purpose: Showcase CPR Cart’s mission, training services, and key highlights in a modern landing-page style.
 -->
 
 <!doctype html>
@@ -14,76 +8,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CPR Cart — Learn CPR & Get Certified</title>
-  <meta name="description" content="CPR Cart offers CPR and first aid certification training along with reliable emergency response equipment.">
+  <title>CPR Cart — CPR Certification & Training Made Simple</title>
+  <meta name="description" content="Join CPR Cart to become CPR certified. Accessible courses, professional instructors, and life-saving training for everyone.">
   <style>
-    :root{--accent:#0b6efd;--dark:#0b1220;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:#f7fbff;color:var(--dark);margin:0;line-height:1.5}
-    header,footer{padding:20px 28px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
-    header nav a{margin-right:16px;color:var(--muted);text-decoration:none;font-weight:500}
-    header nav a:hover{color:var(--accent)}
-    .container{max-width:900px;margin:40px auto;padding:0 28px}
-    h1,h2{color:var(--dark)}
-    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-    .btn-primary{background:var(--accent);color:#fff}
-    .btn-outline{border:1px solid #ccc;color:var(--dark)}
-    footer{font-size:14px;text-align:center;color:var(--muted)}
-    .courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:20px}
-    .course-card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
-    .course-card h3{margin-top:0}
+    :root{--accent:#0b6efd;--dark:#0b1220;--muted:#6b7280;--light:#f8fafc}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--light);color:var(--dark);line-height:1.6}
+    header{background:#fff;box-shadow:0 1px 6px rgba(0,0,0,0.05);padding:18px 32px;display:flex;align-items:center;justify-content:space-between}
+    header .logo{font-weight:700;font-size:20px;color:var(--accent);text-decoration:none}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:500}
+    nav a:hover{color:var(--accent)}
+    .hero{padding:80px 20px;text-align:center;background:linear-gradient(120deg,#0b6efd,#4b8ef7);color:#fff}
+    .hero h1{font-size:2.5rem;margin-bottom:16px}
+    .hero p{font-size:1.1rem;max-width:600px;margin:0 auto 24px}
+    .hero a{background:#fff;color:var(--accent);padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none}
+    .section{max-width:1000px;margin:60px auto;padding:0 28px}
+    .section h2{text-align:center;margin-bottom:20px;color:var(--dark)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:20px}
+    .feature{background:#fff;padding:24px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.05);text-align:center}
+    .feature h3{margin:12px 0 8px;color:var(--accent)}
+    .courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:30px}
+    .course-card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+    .course-card h3{margin-top:0;color:var(--accent)}
+    footer{background:#fff;padding:20px 28px;text-align:center;color:var(--muted);font-size:14px;box-shadow:0 -1px 6px rgba(0,0,0,0.05)}
   </style>
 </head>
 <body>
   <header>
+    <a href="index.html" class="logo">CPR Cart</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="posts.html">Posts</a>
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Empowering You to Save Lives</h1>
-    <p>At CPR Cart, our goal is to make life-saving training accessible, simple, and effective. We provide CPR certification courses, hands-on skill practice, and essential emergency equipment — all designed for healthcare workers, educators, and community responders.</p>
+  <section class="hero">
+    <h1>Learn CPR. Save Lives.</h1>
+    <p>Join CPR Cart and gain the confidence to act in emergencies. Our expert-led certification programs are designed for individuals, teams, and organizations.</p>
+    <a href="#courses">Explore Courses</a>
+  </section>
 
-    <h2 style="margin-top:40px">Our Certification Programs</h2>
-    <div class="courses">
-      <div class="course-card">
-        <h3>CPR Essentials Course</h3>
-        <p>Learn the core steps of performing CPR for adults and children. Great for beginners and anyone who wants to gain confidence in emergencies.</p>
-        <p><strong>Duration:</strong> 3 hours<br><strong>Mode:</strong> In-person / blended</p>
-        <a class="btn btn-primary" href="#">Join Course</a>
+  <section class="section">
+    <h2>Why Choose CPR Cart?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Certified Instructors</h3>
+        <p>All our trainers are industry-certified professionals with years of hands-on experience in emergency response and healthcare.</p>
       </div>
-      <div class="course-card">
-        <h3>Advanced Life Support Training</h3>
-        <p>Develop advanced response techniques for critical situations. Designed for medical professionals who need accredited training.</p>
-        <p><strong>Duration:</strong> 4 hours<br><strong>Mode:</strong> Hybrid / on-site</p>
-        <a class="btn btn-primary" href="#">Get Certified</a>
+      <div class="feature">
+        <h3>Flexible Learning</h3>
+        <p>We offer in-person and blended learning formats so you can get certified at your own pace — anytime, anywhere.</p>
       </div>
-      <div class="course-card">
-        <h3>Comprehensive CPR & First Aid</h3>
-        <p>Complete CPR plus first aid training for workplaces, schools, and organizations. Includes use of AED and basic trauma management.</p>
-        <p><strong>Duration:</strong> 5 hours<br><strong>Mode:</strong> In-person</p>
-        <a class="btn btn-primary" href="#">Enroll Now</a>
+      <div class="feature">
+        <h3>Recognized Certification</h3>
+        <p>Our courses follow globally recognized CPR and AED guidelines, ensuring your certification is valid and respected.</p>
       </div>
     </div>
+  </section>
 
-    <h2 style="margin-top:40px">Why Choose CPR Cart?</h2>
-    <ul>
-      <li>Hands-on training with certified instructors</li>
-      <li>Flexible scheduling — evenings and weekends available</li>
-      <li>Immediate certificate after course completion</li>
-      <li>Equipment and course materials that meet global standards</li>
-    </ul>
+  <section class="section" id="courses">
+    <h2>Our CPR Certification Courses</h2>
+    <div class="courses">
+      <div class="course-card">
+        <h3>CPR Essentials</h3>
+        <p>Master the basics of adult CPR and AED usage. Perfect for parents, educators, and first-time learners.</p>
+        <p><strong>Duration:</strong> 3 hours</p>
+      </div>
+      <div class="course-card">
+        <h3>CPR + First Aid Combo</h3>
+        <p>Comprehensive CPR and first aid skills for personal or workplace preparedness. Includes injury and choking response.</p>
+        <p><strong>Duration:</strong> 5 hours</p>
+      </div>
+      <div class="course-card">
+        <h3>Professional BLS</h3>
+        <p>Advanced Basic Life Support for healthcare providers, following the latest AHA standards and simulation-based practice.</p>
+        <p><strong>Duration:</strong> 4 hours</p>
+      </div>
+    </div>
+  </section>
 
-    <h2 style="margin-top:40px">Learn More</h2>
-    <p>Explore our <a href="posts.html">Posts</a> section for guides on CPR techniques, safety tips, and updates about new training options and health awareness campaigns.</p>
-
-    <p style="margin-top:40px">For group or corporate sessions, contact us at <a href="mailto:info@cprcart.com">info@cprcart.com</a>.</p>
-  </main>
+  <section class="section" style="text-align:center">
+    <h2>Be Ready to Act When It Matters</h2>
+    <p style="max-width:700px;margin:10px auto 30px">Your quick action can make the difference between life and death. Join one of our upcoming certification classes today or explore our learning resources to start your CPR journey.</p>
+    <a href="posts.html" style="display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600">Visit Our Blog</a>
+  </section>
 
   <footer>
-    © <span id="year"></span> CPR Cart — Learn CPR, Save Lives
+    © <span id="year"></span> CPR Cart — Training You to Save Lives
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
