@@ -1,9 +1,6 @@
 <!--
-  posts.html — Blog/Posts page for cprcart.github.io
-  Purpose: List future CPR Cart blog posts, guides, or updates.
-  To add posts later:
-    - Create separate .html files for each post in the repo (e.g., post1.html)
-    - Add links below under <section class="posts">
+  posts.html — Blog/Posts page for CPR Cart GitHub Pages site
+  Purpose: Display CPR Cart blog posts and updates with consistent dark red theme.
 -->
 
 <!doctype html>
@@ -14,51 +11,58 @@
   <title>CPR Cart — Blog & Resources</title>
   <meta name="description" content="CPR Cart blog: tips, training insights, and CPR awareness posts.">
   <style>
-    :root{--accent:#0b6efd;--dark:#0b1220;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:#f7fbff;color:var(--dark);margin:0;line-height:1.5}
-    header,footer{padding:20px 28px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
-    header nav a{margin-right:16px;color:var(--muted);text-decoration:none;font-weight:500}
-    header nav a:hover{color:var(--accent)}
-    .container{max-width:900px;margin:40px auto;padding:0 28px}
-    h1{color:var(--dark);margin-bottom:10px}
-    .post-card{background:#fff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);padding:20px;margin-bottom:20px}
-    .post-card h2{margin:0 0 10px;font-size:22px}
+    :root{--accent:#a60000;--dark:#1a0b0b;--muted:#8c7070;--light:#fdf5f5}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--light);color:var(--dark);line-height:1.6}
+    header{background:#fff;box-shadow:0 1px 6px rgba(0,0,0,0.05);padding:18px 32px;display:flex;align-items:center;justify-content:space-between}
+    header .logo{font-weight:700;font-size:20px;color:var(--accent);text-decoration:none}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:500}
+    nav a:hover{color:var(--accent)}
+    .hero{padding:70px 20px;text-align:center;background:linear-gradient(120deg,#a60000,#d63333);color:#fff}
+    .hero h1{font-size:2.3rem;margin-bottom:10px}
+    .hero p{font-size:1.1rem;max-width:600px;margin:0 auto}
+    .container{max-width:900px;margin:60px auto;padding:0 28px}
+    .post-card{background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.05);padding:24px;margin-bottom:24px;transition:transform .2s ease, box-shadow .2s ease}
+    .post-card:hover{transform:translateY(-4px);box-shadow:0 6px 14px rgba(0,0,0,0.08)}
+    .post-card h2{margin:0 0 10px;font-size:22px;color:var(--accent)}
     .post-card p{color:var(--muted)}
-    .btn{display:inline-block;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
-    .btn-outline{border:1px solid #ccc;color:var(--dark)}
-    footer{font-size:14px;text-align:center;color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:10px}
+    .btn-outline{border:1px solid var(--accent);color:var(--accent)}
+    .btn-outline:hover{background:var(--accent);color:#fff}
+    footer{background:#fff;padding:20px 28px;text-align:center;color:var(--muted);font-size:14px;box-shadow:0 -1px 6px rgba(0,0,0,0.05)}
   </style>
 </head>
 <body>
   <header>
+    <a href="index.html" class="logo">CPR Cart</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="posts.html">Posts</a>
     </nav>
   </header>
 
-  <main class="container">
-    <h1>CPR Insights & Training Articles</h1>
-    <p>Read our guides and resources to stay updated on CPR techniques, training standards, and safety awareness. New posts will be added regularly.</p>
+  <section class="hero">
+    <h1>CPR Insights & Learning Hub</h1>
+    <p>Stay informed with CPR Cart’s latest articles, training updates, and emergency preparedness tips.</p>
+  </section>
 
-    <section class="posts" style="margin-top:30px">
-      <!-- Example post cards; add new posts here later -->
+  <main class="container">
+    <section class="posts">
       <div class="post-card">
         <h2>How CPR Certification Empowers Everyday Heroes</h2>
-        <p>Learn why CPR training is important for everyone — from healthcare professionals to community members. Understand how fast action saves lives.</p>
+        <p>Discover how CPR knowledge transforms ordinary individuals into lifesavers. Quick action and the right training make all the difference.</p>
         <a class="btn btn-outline" href="#">Read More</a>
       </div>
 
       <div class="post-card">
         <h2>Renewing Your CPR Certificate: When and Why It Matters</h2>
-        <p>Certification renewal ensures your life-saving skills stay sharp and compliant with the latest standards. Find out how often you need to renew.</p>
+        <p>Stay compliant and confident with up-to-date CPR certification. Learn how often to renew and what’s changed in the latest guidelines.</p>
         <a class="btn btn-outline" href="#">Read More</a>
       </div>
 
       <div class="post-card">
         <h2>CPR for Workplaces: Building a Safer Environment</h2>
-        <p>Organizations benefit from CPR-certified teams. Here’s how to organize group sessions and promote emergency preparedness at work.</p>
+        <p>Learn how companies benefit from CPR-certified teams and how to organize on-site training for your staff.</p>
         <a class="btn btn-outline" href="#">Read More</a>
       </div>
     </section>
