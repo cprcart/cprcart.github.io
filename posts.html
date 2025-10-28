@@ -1,0 +1,73 @@
+<!--
+  posts.html — Blog/Posts page for cprcart.github.io
+  Purpose: List future CPR Cart blog posts, guides, or updates.
+  To add posts later:
+    - Create separate .html files for each post in the repo (e.g., post1.html)
+    - Add links below under <section class="posts">
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CPR Cart — Blog & Resources</title>
+  <meta name="description" content="CPR Cart blog: tips, training insights, and CPR awareness posts.">
+  <style>
+    :root{--accent:#0b6efd;--dark:#0b1220;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:#f7fbff;color:var(--dark);margin:0;line-height:1.5}
+    header,footer{padding:20px 28px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+    header nav a{margin-right:16px;color:var(--muted);text-decoration:none;font-weight:500}
+    header nav a:hover{color:var(--accent)}
+    .container{max-width:900px;margin:40px auto;padding:0 28px}
+    h1{color:var(--dark);margin-bottom:10px}
+    .post-card{background:#fff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);padding:20px;margin-bottom:20px}
+    .post-card h2{margin:0 0 10px;font-size:22px}
+    .post-card p{color:var(--muted)}
+    .btn{display:inline-block;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-outline{border:1px solid #ccc;color:var(--dark)}
+    footer{font-size:14px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="posts.html">Posts</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>CPR Insights & Training Articles</h1>
+    <p>Read our guides and resources to stay updated on CPR techniques, training standards, and safety awareness. New posts will be added regularly.</p>
+
+    <section class="posts" style="margin-top:30px">
+      <!-- Example post cards; add new posts here later -->
+      <div class="post-card">
+        <h2>How CPR Certification Empowers Everyday Heroes</h2>
+        <p>Learn why CPR training is important for everyone — from healthcare professionals to community members. Understand how fast action saves lives.</p>
+        <a class="btn btn-outline" href="#">Read More</a>
+      </div>
+
+      <div class="post-card">
+        <h2>Renewing Your CPR Certificate: When and Why It Matters</h2>
+        <p>Certification renewal ensures your life-saving skills stay sharp and compliant with the latest standards. Find out how often you need to renew.</p>
+        <a class="btn btn-outline" href="#">Read More</a>
+      </div>
+
+      <div class="post-card">
+        <h2>CPR for Workplaces: Building a Safer Environment</h2>
+        <p>Organizations benefit from CPR-certified teams. Here’s how to organize group sessions and promote emergency preparedness at work.</p>
+        <a class="btn btn-outline" href="#">Read More</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> CPR Cart — Learn CPR, Save Lives
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
